@@ -1,0 +1,102 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light background color */
+  }
+  
+  /* Styling for the app container */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+  }
+  
+  /* Styling for the heading */
+  h1 {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    color: #007bff; /* Blue color for the heading */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 30px; /* Space below the heading */
+    font-weight: 600; /* Slightly bolder text */
+  }
+  
+  /* Styling for the form container */
+  .container {
+    max-width: 800px; /* Adjusted width for better layout */
+    width: 100%; /* Ensure the container takes full width available */
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  /* Styling for form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 20px; /* Space between form elements */
+  }
+  
+  label {
+    width: 150px; /* Fixed width for labels to align inputs */
+    font-weight: bold;
+    margin-right: 20px; /* Space between label and input */
+    color: #333; /* Darker text color for labels */
+  }
+  
+  input {
+    flex: 1; /* Make inputs flexible */
+    padding: 12px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  }
+  
+  input:focus {
+    border-color: #0056b3; /* Darker blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 91, 255, 0.2); /* Light shadow on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0056b3; /* Adjusted button color */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    align-self: center; /* Center the button */
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  button:disabled {
+    background-color: #6c757d; /* Disabled state color */
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #003d7a; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  p {
+    margin: 0;
+    padding: 12px;
+    color: #d9534f; /* Red color for errors */
+    font-size: 16px;
+    text-align: center; /* Center align the error message */
+  }
